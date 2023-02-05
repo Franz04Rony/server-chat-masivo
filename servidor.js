@@ -5,9 +5,9 @@ const servidor = require('http').Server(app);
 const io = require("socket.io")(servidor, {
     cors: {
         //Esto se cambia (http://localhost:3000)
-        //esto tmb se cambia al link netlify
-        //https://615b748f7f5ec21b8268b3b2--mensajeriawtf.netlify.app
-        origin: "http://localhost:3000",
+        //esto tmb se cambia al link vercel
+        //https://chat-masivo.vercel.app/
+        origin: "https://chat-masivo.vercel.app/",
         methods: ["GET", "POST"]
     }
 });

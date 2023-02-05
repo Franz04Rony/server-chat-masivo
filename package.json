@@ -2,12 +2,10 @@
   "name": "servidor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
+  "main": "servidor.js",
   "scripts": {
-    "dev": "nodemon servidor.js"
+    "dev": "nodemon servidor.js",
+    "start": "node servidor.js"
   },
   "keywords": [],
   "author": "",

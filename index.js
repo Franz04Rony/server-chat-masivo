@@ -15,7 +15,7 @@ app.get('/', function(req,res){
     res.status(200).send("Estamos respondiendo");
 });
 
-servidor.listen(process.env.PORT ||8080, () => console.log("Servidor escuchando"));
+servidor.listen(process.env.PORT || 8080, () => console.log("Servidor escuchando"));
 
 io.on('connection', (socket) => {
     let nombre;

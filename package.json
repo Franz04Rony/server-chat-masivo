@@ -2,10 +2,10 @@
   "name": "servidor",
   "version": "1.0.0",
   "description": "",
-  "main": "servidor.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon servidor.js",
-    "start": "node servidor.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

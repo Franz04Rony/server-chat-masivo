@@ -8,7 +8,7 @@ const io = require("socket.io")(servidor, {
         //esto tmb se cambia al link vercel
         //https://chat-masivo.vercel.app/
         //origin: "https://chat-masivo.vercel.app",
-        origin: "https://63e00388625a8b2a85fd1198--chat-masivo1.netlify.app",
+        origin: "*",
         methods: ["GET", "POST"]
     }
 });

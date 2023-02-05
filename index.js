@@ -7,7 +7,8 @@ const io = require("socket.io")(servidor, {
         //Esto se cambia (http://localhost:3000)
         //esto tmb se cambia al link vercel
         //https://chat-masivo.vercel.app/
-        origin: "*",
+        //origin: "https://chat-masivo.vercel.app",
+        origin: "https://63e00388625a8b2a85fd1198--chat-masivo1.netlify.app",
         methods: ["GET", "POST"]
     }
 });
@@ -33,7 +34,7 @@ io.on('connection', (socket) => {
         io.emit('mensajes',{nombre: nombre, mensaje:`${nombre} abandonó la sala`, foto:foto})
     });
 });
-app.use(express.static('lab09'));
+app.use(express.static('frontend'));
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "https://chat-masivo.vercel.app"); 
 //     res.header('Access-Control-Allow-Credentials', true);

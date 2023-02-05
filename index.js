@@ -7,7 +7,7 @@ const io = require("socket.io")(servidor, {
         //Esto se cambia (http://localhost:3000)
         //esto tmb se cambia al link vercel
         //https://chat-masivo.vercel.app/
-        origin: "https://chat-masivo.vercel.app/",
+        origin: "https://chat-masivo.vercel.app",
         methods: ["GET", "POST"]
     }
 });
